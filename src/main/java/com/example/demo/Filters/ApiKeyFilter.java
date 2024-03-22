@@ -11,9 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 public class ApiKeyFilter extends OncePerRequestFilter {
 
-    private final String apiKey = "this is api key";
-
-    
+    private final String apiKey = "this is api key";    
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
